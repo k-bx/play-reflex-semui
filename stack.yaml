@@ -1,0 +1,26 @@
+compiler: ghcjs-0.2.0_ghc-8.0.1
+compiler-check: match-exact
+system-ghc: true
+resolver: lts-7.2
+
+packages:
+- '.'
+- location:
+    git: git@github.com:reflex-frp/reflex.git
+    commit: a63aba90bdea5ae5b3e1506d468613bdfedcdfa3
+- location:
+    git: git@github.com:reflex-frp/reflex-dom.git
+    commit: ff667679ea7d0ccbe31b2a1a74c929990a85027f
+- location:
+    git: git@github.com:ghcjs/ghcjs-base.git
+    commit: 9d89e122eeeaeebfdb07a021cffb635532b1cbb7
+- location:
+    git: git@github.com:reflex-frp/reflex-dom-semui.git
+    commit: b2bd1280466f58568a74b09abb1a5a73ad3b6733
+extra-deps:
+- ghcjs-dom-0.2.4.0
+- ghcjs-dom-jsffi-0.4.0.0
+- ref-tf-0.4.0.1
+- zenc-0.1.1
+flags: {}
+extra-package-dbs: []
